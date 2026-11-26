@@ -1,7 +1,7 @@
 # GridMap3D for Blender
 GridMap3D addon for Blender, inspired by Godot 4.x GridMap3D node.
 
-My biggest issue with Godot's GridMap3D is the inability to assign different materials to different parts without having to make a billion copies of each piece. Blender's material management is far superior, in my opinion, but I like the quick versatility of blocking out a map with Godot's GridMap3D. So I made
+My biggest issue with Godot's GridMap3D is the inability to assign different materials to different parts without having to make a billion copies of each piece. Blender's material management is far superior, in my opinion, but I like the quick versatility of blocking out a map with Godot's GridMap3D. So I made this! It's still in alpha and there's plenty of quality of life improvements to be made, but I figured I'd upload it now in case anyone else wants to have a look at it.
 
 ## Installation
 Drag & drop the .zip into Blender and it should work automatically. Confirmed working with Blender 5.3.
