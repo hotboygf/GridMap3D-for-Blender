@@ -22,3 +22,10 @@ Future features:
 
 ## DISCLAIMER
 Parts of the code were written by AI, but every line has been READ and REVIEWED by a HUMAN.
+
+<img width="1920" height="1032" alt="Screenshot 2026-11-26 165823" src="https://github.com/user-attachments/assets/21378770-eae8-458e-91c7-a918bb0be528" />
+
+<img width="1920" height="1032" alt="Screenshot 2026-11-26 165836" src="https://github.com/user-attachments/assets/aa633234-36a2-4955-a729-97945b97ed16" />
+
+<img width="1920" height="1032" alt="Screenshot 2026-11-26 165931" src="https://github.com/user-attachments/assets/13d22ebe-1255-49dc-98f5-c2a3cb478f9e" />
+
