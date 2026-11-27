@@ -29,6 +29,7 @@ Future features:
 * Assign materials to cell slots.
 * Replace cell on click / block placement if cell is full. (Maybe a toggle option in the N-panel?)
 * Add option to automatically generate object origins. (Likely to be unreliable for 'floating' pieces.)
+* Add level/cell grid visualization
 
 ## Disclaimer
 Parts of the code were written by AI, but every line has been READ and REVIEWED by a HUMAN. Most code has been manually assembled or rewritten. AI was used purely as a boilerplate & troubleshooting tool.
