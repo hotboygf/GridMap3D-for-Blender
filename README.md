@@ -34,3 +34,5 @@ Parts of the code were written by AI, but every line has been READ and REVIEWED 
 
 <img width="1920" height="1032" alt="Screenshot 2026-11-26 165931" src="https://github.com/user-attachments/assets/13d22ebe-1255-49dc-98f5-c2a3cb478f9e" />
 
+<img width="1118" height="448" alt="image" src="https://github.com/user-attachments/assets/9078656d-bf3e-43ae-982e-a4475367c8d9" />
+
