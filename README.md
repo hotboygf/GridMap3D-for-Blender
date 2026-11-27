@@ -14,6 +14,10 @@ In EDIT MODE, the GridMap N-panel allows you to switch between placement/deletio
 
 LMB to place/delete. ESC or CTRL+RMB to cancel.
 
+## Good Practices & Easy Mistakes
+
+Do NOT remove cells manually by clicking & deleting vertices because they will still exist in the cell dictionary. Currently, this has no effect, but in future versions that utilize materials, this will cause issues further down the road.
+
 ## TODOS
 Future features:
 * Click and drag to place meshes in cells.
