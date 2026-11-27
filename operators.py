@@ -349,7 +349,7 @@ class GRIDMAP_OT_place_modal(bpy.types.Operator):
         blf.position(font_id, 20, 20, 0)  # Lower-left corner
         blf.size(font_id, 20.0)
         blf.color(font_id, 0.82, 0.82, 0.82, 1.0)
-        blf.draw(font_id, "Esc / Ctrl + RMB to cancel")
+        blf.draw(font_id, "Esc / Ctrl + RMB to cancel. WASD to rotate.")
 
 class GRIDMAP_OT_level_step(bpy.types.Operator):
     bl_idname = "gridmap.level_step"
