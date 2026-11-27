@@ -12,7 +12,7 @@ A new GridMap object and collection will populate in edit mode.
 
 In EDIT MODE, the GridMap N-panel allows you to switch between placement/deletion, choose meshes from the library, change levels (Z axis), and clean up the final mesh by removing double vertices at intersections.
 
-LMB to place/delete. ESC or CTRL+RMB to cancel.
+__LMB__ to place/delete. __ESC__ or __CTRL+RMB__ to cancel. __WASD__ to rotate pieces before placement. (W/S around global X, A/D around global Z)
 
 Open the info console to view cell coordinates as you place pieces.
 
@@ -25,7 +25,7 @@ Open the info console to view cell coordinates as you place pieces.
 ## TODOS
 Future features:
 * Click and drag to place meshes in cells.
-* Rotate pieces with WASD before placement.
+* ~~Rotate pieces with WASD before placement.~~   _Done!_
 * Assign materials to cell slots.
 * Replace cell on click / block placement if cell is full. (Maybe a toggle option in the N-panel?)
 * Add option to automatically generate object origins. (Likely to be unreliable for 'floating' pieces.)
