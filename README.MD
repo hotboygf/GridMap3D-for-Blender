@@ -12,22 +12,28 @@ A new GridMap object and collection will populate in edit mode.
 
 In EDIT MODE, the GridMap N-panel allows you to switch between placement/deletion, choose meshes from the library, change levels (Z axis), and clean up the final mesh by removing double vertices at intersections.
 
-LMB to place/delete. ESC or CTRL+RMB to cancel.
+__LMB__ to place/delete. __ESC__ or __CTRL+RMB__ to cancel. __WASD__ to rotate pieces before placement. (W/S around global X, A/D around global Z)
+
+Open the info console to view cell coordinates as you place pieces.
 
 ## Good Practices & Easy Mistakes
 
-Do NOT remove cells manually by clicking & deleting vertices because they will still exist in the cell dictionary. Currently, this has no effect, but in future versions that utilize materials, this will cause issues further down the road.
+1. Do NOT remove cells manually by clicking & deleting vertices because they will still exist in the cell dictionary. Currently, this has no effect, but in future versions that utilize materials, this will cause issues further down the road.
+
+2. Piece origins should be at the center of the cell in which it fits.
 
 ## TODOS
 Future features:
 * Click and drag to place meshes in cells.
-* Rotate pieces with WASD before placement.
+* ~~Rotate pieces with WASD before placement.~~   _Done!_
 * Assign materials to cell slots.
-* Replace cell on click / block placement if cell is full
+* Replace cell on click / block placement if cell is full. (Maybe a toggle option in the N-panel?)
+* Add option to automatically generate object origins. (Likely to be unreliable for 'floating' pieces.)
 
-## DISCLAIMER
-Parts of the code were written by AI, but every line has been READ and REVIEWED by a HUMAN.
+## Disclaimer
+Parts of the code were written by AI, but every line has been READ and REVIEWED by a HUMAN. Most code has been manually assembled or rewritten. AI was used purely as a boilerplate & troubleshooting tool.
 
+## Screenshots
 <img width="1920" height="1032" alt="Screenshot 2026-11-26 165823" src="https://github.com/user-attachments/assets/21378770-eae8-458e-91c7-a918bb0be528" />
 
 <img width="1920" height="1032" alt="Screenshot 2026-11-26 165836" src="https://github.com/user-attachments/assets/aa633234-36a2-4955-a729-97945b97ed16" />
