@@ -23,6 +23,7 @@ Future features:
 * Click and drag to place meshes in cells.
 * Rotate pieces with WASD before placement.
 * Assign materials to cell slots.
+* Replace cell on click / block placement if cell is full
 
 ## DISCLAIMER
 Parts of the code were written by AI, but every line has been READ and REVIEWED by a HUMAN.
