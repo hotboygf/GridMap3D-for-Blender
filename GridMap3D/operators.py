@@ -11,6 +11,7 @@ class GRIDMAP_OT_generate(bpy.types.Operator):
     def execute(self, context):
         scene = context.scene
         settings = scene.gridmap_settings
+
         if not settings.piece_collection:
             self.report({'ERROR'}, "No piece collection selected.")
             return {'CANCELLED'}
@@ -40,17 +41,21 @@ class GRIDMAP_OT_generate(bpy.types.Operator):
         context.view_layer.objects.active = obj
         bpy.ops.object.mode_set(mode='EDIT')
 
+        # 6. Create visual grid
+        self._create_grid(context)
+
         return {'FINISHED'}
+
+    def _create_grid(self, context):
+        pass 
 
 
 def _get_or_create_material_slot(obj, material):
-    """Return the slot index for material on obj, adding a slot if needed."""
-    if material is None:
-        return 0  # fallback to first slot
+    # Return the slot index for material on obj, adding a slot if needed.
+    if material is None: return 0
 
     for i, slot in enumerate(obj.material_slots):
-        if slot.material == material:
-            return i
+        if slot.material == material: return i
 
     # Not found: append a new slot.
     obj.data.materials.append(material)
@@ -273,8 +278,6 @@ class GRIDMAP_OT_place_modal(bpy.types.Operator):
             ghost.hide_render = True
             ghost.hide_select = True
             ghost.show_in_front = True
-
-            # Wireframe-only display
             ghost.display_type = "WIRE"
 
             self.ghost_obj = ghost
@@ -285,13 +288,14 @@ class GRIDMAP_OT_place_modal(bpy.types.Operator):
         if source is None or source.type != "MESH":
             return None
 
-        bb = source.bound_box  # 8 corners in local space
+        # get center
+        bb = source.bound_box
         c_local = sum((Vector(c) for c in bb), Vector()) / 8.0
 
-        # 1. Duplicate the object (shares mesh data — cheap).
+        # 1. Duplicate the object as a ghost
         ghost = source.copy()
         ghost.name = f"__ghost_{piece_name}"
-        ghost.data = source.data  # shared mesh; don't mutate it
+        ghost.data = source.data
         
         self._c_local = c_local
 
@@ -301,7 +305,7 @@ class GRIDMAP_OT_place_modal(bpy.types.Operator):
         # 3. Make it non-interactive / non-renderable.
         ghost.hide_render = True
         ghost.hide_select = True
-        ghost.show_in_front = True            # draw through other geometry
+        ghost.show_in_front = True
 
         # 4. Give it a translucent "hologram" material.
         ghost_mat = bpy.data.materials.new("__ghost_mat")
